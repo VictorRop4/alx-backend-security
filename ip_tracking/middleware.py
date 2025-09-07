@@ -39,7 +39,7 @@ class RequestLogMiddleware(MiddlewareMixin):
             ip_address=ip_address,
             timestamp=now(),
             path=request.path,
-            coutry=geo_data["country"],
+            country=geo_data["country"],
             city=geo_data['city']
         )
         return None
